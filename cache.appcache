@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # v1.0.1-ffos-201302192207
-# HexGL by Thibaut Despoulain (BKcore.com)
+# FLIGHTZ by Thibaut Despoulain (SHOOZ.com)
 index.html
 css/BebasNeue-webfont.eot
 css/BebasNeue-webfont.ttf
@@ -22,23 +22,23 @@ libs/postprocessing/MaskPass.js
 libs/Detector.js
 libs/Stats.js
 libs/DAT.GUI.min.js
-bkcore.coffee/controllers/TouchController.js
-bkcore.coffee/controllers/OrientationController.js
-bkcore/Timer.js
-bkcore/ImageData.js
-bkcore/Utils.js
-bkcore/threejs/RenderManager.js
-bkcore/threejs/Shaders.js
-bkcore/threejs/Particles.js
-bkcore/threejs/Loader.js
-bkcore/hexgl/HUD.js
-bkcore/hexgl/RaceData.js
-bkcore/hexgl/ShipControls.js
-bkcore/hexgl/ShipEffects.js
-bkcore/hexgl/CameraChase.js
-bkcore/hexgl/Gameplay.js
-bkcore/hexgl/tracks/Cityscape.js
-bkcore/hexgl/HexGL.js
+shooz.coffee/controllers/TouchController.js
+shooz.coffee/controllers/OrientationController.js
+shooz/Timer.js
+shooz/ImageData.js
+shooz/Utils.js
+shooz/threejs/RenderManager.js
+shooz/threejs/Shaders.js
+shooz/threejs/Particles.js
+shooz/threejs/Loader.js
+shooz/flightz/HUD.js
+shooz/flightz/RaceData.js
+shooz/flightz/ShipControls.js
+shooz/flightz/ShipEffects.js
+shooz/flightz/CameraChase.js
+shooz/flightz/Gameplay.js
+shooz/flightz/tracks/Cityscape.js
+shooz/flightz/FLIGHTZ.js
 geometries/bonus/base/base.js
 geometries/booster/booster.js
 geometries/ships/feisar/feisar.js

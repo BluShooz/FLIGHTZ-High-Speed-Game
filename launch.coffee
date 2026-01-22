@@ -1,7 +1,7 @@
 $ = (_) -> document.getElementById _
 
 init = (controlType, quality, hud, godmode) ->
-  hexGL = new bkcore.hexgl.HexGL(
+  hexGL = new shooz.flightz.FLIGHTZ(
     document: document
     width: window.innerWidth
     height: window.innerHeight
@@ -32,9 +32,9 @@ init = (controlType, quality, hud, godmode) ->
       progressbar.style.width = "#{ p.loaded / p.total * 100 }%"
   )
 
-u = bkcore.Utils.getURLParameter
+u = shooz.Utils.getURLParameter
 
-defaultControls = if bkcore.Utils.isTouchDevice() then 1 else 0
+defaultControls = if shooz.Utils.isTouchDevice() then 1 else 0
 
 s = [
   ['controlType', ['KEYBOARD', 'TOUCH', 'LEAP MOTION CONTROLLER',

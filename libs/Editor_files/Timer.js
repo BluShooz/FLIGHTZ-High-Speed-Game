@@ -1,9 +1,9 @@
 /*!
- * @class bkcore.Timer
+ * @class shooz.Timer
  *
  * new Date().getTime() wrapper to use as timers.
  * 
- * @author Thibaut 'BKcore' Despoulain <http://bkcore.com>
+ * @author Thibaut 'SHOOZ' Despoulain <http://shooz.com>
  */
 
 /**
@@ -21,15 +21,15 @@ window.requestAnimFrame = (function(){
 })();
 
 /*!
- * @package bkcore
+ * @package shooz
  */
-var bkcore = bkcore || {};
+var shooz = shooz || {};
 
 /*!
  * Creates a new timer, inactive by default.
  * Call Timer.start() to activate.
  */
-bkcore.Timer = function()
+shooz.Timer = function()
 {
 	this.time = {
 		start: 0,
@@ -45,7 +45,7 @@ bkcore.Timer = function()
 /*!
  * Starts/restarts the timer.
  */
-bkcore.Timer.prototype.start = function()
+shooz.Timer.prototype.start = function()
 {
 	var now = new Date().getTime();
 
@@ -61,7 +61,7 @@ bkcore.Timer.prototype.start = function()
 /*!
  * Restarts timer, returning last ms tick
  */
-bkcore.Timer.prototype.restart = function()
+shooz.Timer.prototype.restart = function()
 {
 	var now = new Date().getTime();
 	var e = now - this.time.start;
@@ -82,7 +82,7 @@ bkcore.Timer.prototype.restart = function()
  *
  * @param bool Do pause
  */
-bkcore.Timer.prototype.pause = function(bool)
+shooz.Timer.prototype.pause = function(bool)
 {
 	this.active = !bool;
 }
@@ -90,7 +90,7 @@ bkcore.Timer.prototype.pause = function(bool)
 /*!
  * Update method to be called inside a RAF loop
  */
-bkcore.Timer.prototype.update = function()
+shooz.Timer.prototype.update = function()
 {
 	if(!this.active) return;
 
@@ -107,7 +107,7 @@ bkcore.Timer.prototype.update = function()
 /*!
  * Returns elapsed milliseconds
  */
-bkcore.Timer.prototype.getElapsed = function()
+shooz.Timer.prototype.getElapsed = function()
 {
 	return this.time.elapsed;
 }
@@ -117,9 +117,9 @@ bkcore.Timer.prototype.getElapsed = function()
  *
  * 
  */
-bkcore.Timer.prototype.getElapsedTime = function()
+shooz.Timer.prototype.getElapsedTime = function()
 {
-	return bkcore.Timer.msToTime(this.time.elapsed);
+	return shooz.Timer.msToTime(this.time.elapsed);
 }
 
 /*!
@@ -128,7 +128,7 @@ bkcore.Timer.prototype.getElapsedTime = function()
  * @param x int In milliseconds
  * @return Object{h,m,s,ms}
  */
-bkcore.Timer.msToTime = function(t)
+shooz.Timer.msToTime = function(t)
 {
 	var ms, s, m, h;
 	
@@ -148,7 +148,7 @@ bkcore.Timer.msToTime = function(t)
  * @param x int In milliseconds
  * @return Object<string>{h,m,s,ms}
  */
-bkcore.Timer.msToTimeString = function(t)
+shooz.Timer.msToTimeString = function(t)
 {
 	var ms, s, m, h;
 	

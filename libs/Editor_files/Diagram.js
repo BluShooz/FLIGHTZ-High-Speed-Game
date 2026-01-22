@@ -87,7 +87,7 @@ pgli.diagram.Diagram = gamecore.Base.extend('Diagram',
 		if(autoRedraw != undefined && autoRedraw != false && autoRedraw > 0)
 		{
 			this.redrawDelay = 1000 / autoRedraw;
-			this.timer = new bkcore.Timer();
+			this.timer = new shooz.Timer();
 			this.timer.start();
 			this.autoRedraw(true);
 		}

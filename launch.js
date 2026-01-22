@@ -8,7 +8,7 @@
 
   init = function(controlType, quality, hud, godmode) {
     var hexGL, progressbar;
-    hexGL = new bkcore.hexgl.HexGL({
+    hexGL = new shooz.flightz.FLIGHTZ({
       document: document,
       width: window.innerWidth,
       height: window.innerHeight,
@@ -42,9 +42,9 @@
     });
   };
 
-  u = bkcore.Utils.getURLParameter;
+  u = shooz.Utils.getURLParameter;
 
-  defaultControls = bkcore.Utils.isTouchDevice() ? 1 : 0;
+  defaultControls = shooz.Utils.isTouchDevice() ? 1 : 0;
 
   s = [['controlType', ['KEYBOARD', 'TOUCH', 'LEAP MOTION CONTROLLER', 'GAMEPAD'], defaultControls, defaultControls, 'Controls: '], ['quality', ['LOW', 'MID', 'HIGH', 'VERY HIGH'], 3, 3, 'Quality: '], ['hud', ['OFF', 'ON'], 1, 1, 'HUD: '], ['godmode', ['OFF', 'ON'], 0, 1, 'Godmode: ']];
 
