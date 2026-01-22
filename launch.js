@@ -7,8 +7,8 @@
   };
 
   init = function(controlType, quality, hud, godmode) {
-    var hexGL, progressbar;
-    hexGL = new shooz.flightz.FLIGHTZ({
+    var flightzGame, progressbar;
+    flightzGame = new shooz.flightz.FLIGHTZ({
       document: document,
       width: window.innerWidth,
       height: window.innerHeight,
@@ -22,15 +22,15 @@
       godmode: godmode,
       track: 'Cityscape'
     });
-    window.hexGL = hexGL;
+    window.flightzGame = flightzGame;
     progressbar = $('progressbar');
-    return hexGL.load({
+    return flightzGame.load({
       onLoad: function() {
         console.log('LOADED.');
-        hexGL.init();
+        flightzGame.init();
         $('step-3').style.display = 'none';
         $('step-4').style.display = 'block';
-        return hexGL.start();
+        return flightzGame.start();
       },
       onError: function(s) {
         return console.error("Error loading " + s + ".");
